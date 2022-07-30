@@ -1,0 +1,134 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<p id="demo">chal cilck kar</p>
+<button type="button" onclick="myfunction()">button</button>
+
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body style=" background-image: linear-gradient(to bottom, #c8e9c2, #8ed8c1, #54c3cb, #2ea9d4, #508bce, #508bce, #508bce, #508bce, #2ea9d4, #54c3cb, #8ed8c1, #c8e9c2);">
+
+  <h2>JavaScript try catch</h2>
+
+  <p>Please input a number between 5 and 10:</p>
+
+  <input id="demo" type="text">
+  <button type="button" onclick="myFunction()">Test Input</button>
+  <p id="p01"></p>
+  <button onclick="myction()">Open Window</button>
+  <button onclick="myltion()">Close Window</button>
+<br>
+
+  <button type="button" onclick="stopani()">ffdfldfldfl</button>
+  <div id="tests" style="width:40%; background-color: blue; height: 200px; background-repeat:no-repeat; background-attachment: fixed; background-size: contain; background-image: url(https://images.hdqwalls.com/wallpapers/bthumb/the-batman-robert-pattinson-mask-off-4k-ip.jpg);"></div>
+
+  <button type="button" onclick="stoani()">wwewewewewe</button>
+  <div  id="tet" style="width:100%; background-color: blue; height: 200px; margin: 5px;background-repeat:no-repeat;  background-attachment: fixed;background-size: cover;  background-image:url(https://images.hdqwalls.com/wallpapers/bthumb/kda-seraphine-late-morning-coffee-5k-kc.jpg);"></div>
+
+  <div  id="te" style="width:40%;height: 200px;;background-size: contain; background-color: blue; margin: 5px;background-repeat:no-repeat;  background-attachment: fixed;  background-image:url(https://images.hdqwalls.com/wallpapers/bthumb/kda-akali-black-5k-si.jpg);"></div>
+
+
+
+  <script>
+    let number = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+
+    function myFunction() {
+
+      //console.log(number)
+      const message = document.getElementById("p01");
+      message.innerHTML = "";
+      let x = document.getElementById("demo").value;
+      try { 
+        if(x == "")  throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5)  throw "too low";
+        if(x > 10)   throw "too high";
+        if(x == number) throw "Nice";
+      }
+      catch(err) {
+        message.innerHTML = "Input is " + err;
+      }
+    }
+    myFunction()
+
+
+    var a = 0;
+    var id = setInterval(anim,100);
+    function anim() {
+      a= a + 10;
+      if(a == 480) {
+        clearInterval(id);
+      }else{
+        var target = document.getElementById("tests");
+        target.style.marginLeft = a +'px';
+      }
+    }
+
+    function stopani(){
+      clearTimeout(id);
+    }
+
+
+    var b = 0;
+    var ids = setInterval(ansi,100);
+    function ansi(){
+      b = b +10;
+      if (b==480){
+        clearInterval(ids);
+      }else{
+        var target =document.getElementById("tet");
+        target.style.marginLeft = b +'px'; 
+      }
+    }
+    function stoani(){
+      clearTimeout(ids);
+    }
+
+    var c = 0;
+    var idsc = setInterval(asi,100);
+    function asi(){
+      c = c +10;
+      if (c==480){
+        clearInterval(idsc);
+      }else{
+        var target =document.getElementById("te");
+        target.style.marginLeft = c +'px'; 
+      }
+    } 
+
+   // function myction() {
+ //     const myWin = window.open("https://gra.dient.art/view/lhk0fierr8", "", "width=200, height=100");
+ //    let x = myWin.screenX;
+ //    let y = myWin.screenY;
+  //    document.getElementById("dem").innerHTML =
+  //    "myWin.screenX= " + x + "<br>myWin.screenY= " + y; 
+   // }
+let mywindow;
+
+    function myction(){
+     mywindow = window.open("https://gra.dient.art/view/lhk0fierr8", "", "width=400, height=300");
+    }
+    function myltion(){
+      mywindow.close();
+    }
+  </script>
+
+</body>
+</html>
+
+
+
